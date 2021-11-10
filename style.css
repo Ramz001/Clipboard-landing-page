@@ -21,5 +21,12 @@ html,body{
 }
 
 .feature-image{
-    width: 100%;
+    width: 30%;
+    height: 30%;
+    display: block;
+}
+
+.flex{
+    display: flex;
+    display: block;
 }
