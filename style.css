@@ -41,9 +41,27 @@ html,body{
 /* intro */
 .intro{
     position: relative;
-    z-index: 1;
+    z-index: 1;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.intro-heading{
+    font-size: 2rem;
+    color:  var(--dark-grayish-blue);
+    
+}
+
+.intro-bac{
+    color: var(--grayish-blue);
+    font-size: 350;
+}
+
+/* widths */
+.w-500px{
+    max-width: 500px;
+}
 /* buttons */
 .ios-btn{
     display: inline-block;
@@ -73,7 +91,6 @@ html,body{
 }
 
 /* feature */
-
 .point-intro{
     color: var(--dark-grayish-blue);
     text-align: center;
@@ -81,13 +98,18 @@ html,body{
 
 .point-bac{
     text-align: center;
-    color: var(--grayish-blue);
-    
+    color: var(--grayish-blue);  
 }  
 
 /* icons */
-.preview-icon{
-    margin: 0 auto;
-    width: 100px;
-    display: block;
+.preview-icon {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+    margin: auto;
+    width: 30%;
+    max-width: 120px;
 }
+
+
+
