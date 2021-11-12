@@ -21,11 +21,7 @@ html,body{
 }
 
 /* images */
-.feature-image{
-    width: 30%;
-    height: 30%;
-    display: block;
-}
+
 
 .bac-img{
     position: absolute;
@@ -45,6 +41,7 @@ html,body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .intro-heading{
@@ -73,7 +70,7 @@ html,body{
 }
 
 .mac-btn{
-    margin: .5rem 0;
+    margin: .5rem;
     display: inline-block;
     padding: .6rem 3.5rem;
     border-radius: 25px;
@@ -87,20 +84,51 @@ html,body{
     flex-direction: column;
     align-items: center;
     font-size: 320;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 5rem 0;
 }
 
 /* feature */
-.point-intro{
+.features{
+    display: flex;
+}
+
+.main-intro{
     color: var(--dark-grayish-blue);
     text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.point-intro{
+    color: var(--dark-grayish-blue);
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.main-bac{
+    color: var(--grayish-blue);
+    text-align: center;
+    margin: 2.5% 25%;
 }
 
 .point-bac{
-    text-align: center;
-    color: var(--grayish-blue);  
+    color: var(--grayish-blue);
+    margin-right: 45%;  
 }  
 
+.point-image{
+    position: relative;
+    left: 0;
+    width: 41%;
+    display: block;
+    margin-right: 10%;
+    margin-left: -.9rem;
+}
+
+.feature-image{
+    width: 35%;
+    display: block;
+}
 /* icons */
 .preview-icon {
     display: flex;
@@ -111,5 +139,20 @@ html,body{
     max-width: 120px;
 }
 
-
-
+/* media query */
+@media (min-width: 50rem){
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+}
+@media (max-width: 50rem){
+.features{
+    flex-direction: column;
+}
+.point-image{
+    margin: 0 auto;
+    width: 50%
+    }
+}
