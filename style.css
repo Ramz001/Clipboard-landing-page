@@ -101,17 +101,25 @@ html,body{
     display: flex;
 }
 
+.main-feature{
+    text-align: center;
+    margin: 5% auto;
+}
+
 .main-intro{
     color: var(--dark-grayish-blue);
-    text-align: center;
     font-size: 1.6rem;
+    text-align: center;
     margin-top: 1.5rem;
 }
 
 .main-bac{
     color: var(--grayish-blue);
+    margin: .5rem auto;
+    display: block;
+    position: relative;
+    max-width: 40rem;
     text-align: center;
-    margin: 1.5% 0 2.5% 0;
 }
 
 .point-intro{
@@ -178,7 +186,7 @@ html,body{
 }
 
 .company{
-    max-width: 170px;
+    max-width: 20rem;
 }
 /* media queries */
 @media (min-width: 50rem){
