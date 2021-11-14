@@ -1,4 +1,5 @@
 @import url(https://fonts.google.com/specimen/Bai+Jamjuree);
+
 :root{
     --strong-cyan:  hsl(171, 66%, 44%);
     --light-blue:  hsl(233, 100%, 69%);
@@ -9,10 +10,11 @@
 html,body{
     margin: 0;
     font-size: 18px;
-    font-style: "Bai Jamjuree",sans-serif;
+    font-style: "Bai Jamjuree", sans-serif;
     font-weight: 400;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    line-height: 1.6;
 }
 
 /* font sizes */
@@ -21,19 +23,26 @@ html,body{
 }
 
 /* images */
-
-
 .bac-img{
     position: absolute;
     width: 100%;
 }
-/* flex */
 
-.flex{
-    display: flex;
+.point-image{
+    position: relative;
+    left: 0;
+    width: 41%;
     display: block;
+    margin-right: 10%;
+    margin-left: -.9rem;
 }
 
+.feature-image{
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 2% 0;
+}
 /* intro */
 .intro{
     position: relative;
@@ -47,7 +56,7 @@ html,body{
 .intro-heading{
     font-size: 2rem;
     color:  var(--dark-grayish-blue);
-    
+    margin: .5rem 0;
 }
 
 .intro-bac{
@@ -95,40 +104,28 @@ html,body{
 .main-intro{
     color: var(--dark-grayish-blue);
     text-align: center;
-    font-size: 1.5rem;
-    margin: 1rem 0;
-}
-
-.point-intro{
-    color: var(--dark-grayish-blue);
-    margin: 1rem 0;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
 }
 
 .main-bac{
     color: var(--grayish-blue);
     text-align: center;
-    margin: 2.5% 25%;
+    margin: 1.5% 25% 2.5% 25%;
+}
+
+.point-intro{
+    color: var(--dark-grayish-blue);
+    margin: .5rem  0  .2rem 0;
+    font-size: 1.1rem;
 }
 
 .point-bac{
     color: var(--grayish-blue);
     margin-right: 45%;  
+    margin-bottom: 6%;
 }  
 
-.point-image{
-    position: relative;
-    left: 0;
-    width: 41%;
-    display: block;
-    margin-right: 10%;
-    margin-left: -.9rem;
-}
-
-.feature-image{
-    width: 35%;
-    display: block;
-}
 /* icons */
 .preview-icon {
     display: flex;
@@ -139,7 +136,40 @@ html,body{
     max-width: 120px;
 }
 
-/* media query */
+/* flex */
+.flex{
+    display: flex;
+    gap: 1.5rem;
+    margin: 5% 0 15% 0;
+}
+
+.flex-item{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    gap: 1rem;
+}
+
+/* perks */
+.perk-logo{
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+
+.perk-intro{
+    color: var(--dark-grayish-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.perk-bac{
+    color: var(--grayish-blue);
+    line-height: 1.4; 
+}
+
+/* media queries */
 @media (min-width: 50rem){
     .buttons{
         flex-direction: row;
@@ -148,11 +178,49 @@ html,body{
     
 }
 @media (max-width: 50rem){
-.features{
-    flex-direction: column;
-}
-.point-image{
-    margin: 0 auto;
-    width: 50%
+    .features{
+        flex-direction: column;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .point-image{
+        margin: 0 auto;
+        width: 50%
     }
 }
+
+/* hover effects */
+.mac-btn:hover,
+.mac-btn:active{
+    opacity: .75;
+    cursor: pointer;
+}
+
+.ios-btn:hover,
+.ios-btn:active{
+    opacity: .75;
+    cursor: pointer;
+} 
+
+/* custom scrollbar*/
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
