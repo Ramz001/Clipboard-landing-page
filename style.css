@@ -38,7 +38,7 @@ html,body{
 }
 
 .feature-image{
-    width: 50%;
+    width: 70%;
     display: block;
     margin: auto;
     padding: 2% 0;
@@ -111,7 +111,7 @@ html,body{
 .main-bac{
     color: var(--grayish-blue);
     text-align: center;
-    margin: 1.5% 25% 2.5% 25%;
+    margin: 1.5% 0 2.5% 0;
 }
 
 .point-intro{
@@ -140,7 +140,7 @@ html,body{
 .flex{
     display: flex;
     gap: 1.5rem;
-    margin: 5% 0 15% 0;
+    margin: 5% 0 10% 0;
 }
 
 .flex-item{
@@ -166,9 +166,20 @@ html,body{
 
 .perk-bac{
     color: var(--grayish-blue);
-    line-height: 1.4; 
+    max-width: 23rem;
+    margin: 0 1rem;
 }
 
+/* company logos */
+.companies{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+}
+
+.company{
+    max-width: 170px;
+}
 /* media queries */
 @media (min-width: 50rem){
     .buttons{
@@ -180,10 +191,30 @@ html,body{
 @media (max-width: 50rem){
     .features{
         flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-points{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .point-bac{
+        margin: 0;
+        max-width: 25rem;
     }
 
     .flex{
         flex-direction: column;
+    }
+
+    .companies{
+        flex-direction: column;
+        align-items: center;
+    }
+    .company{
+        margin-bottom: 2rem;
+    
     }
 
     .point-image{
