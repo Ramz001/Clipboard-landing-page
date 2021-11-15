@@ -249,17 +249,7 @@ html,body{
     }
 }
 
-@media (max-width: 55rem){
-    .intro-heading,
-    .intro-bac,
-    .main-feature,
-    .main-bac,
-    .point-bac
-    .point-intro,
-    .perk-bac,
-    .perk-intro{
-        margin: 0 .9rem;
-    }
+@media (max-width: 50rem){
     .features{
         flex-direction: column;
         align-items: center;
@@ -293,6 +283,16 @@ html,body{
     .point-image{
         margin: 0 auto;
         width: 50%
+    }
+    .intro-heading,
+    .intro-bac,
+    .main-feature,
+    .main-bac,
+    .point-bac
+    .point-intro,
+    .perk-bac,
+    .perk-intro{
+        margin: 0 .9rem;
     }
 }
 
