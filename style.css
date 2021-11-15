@@ -284,15 +284,16 @@ html,body{
         margin: 0 auto;
         width: 50%
     }
+
     .intro-heading,
     .intro-bac,
     .main-feature,
     .main-bac,
-    .point-bac
+    .point-bac,
     .point-intro,
     .perk-bac,
     .perk-intro{
-        margin: 0 .9rem;
+        margin: 0 .7rem;
     }
 }
 
