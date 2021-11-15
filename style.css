@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Bai+Jamjuree);
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
 
 :root{
     --strong-cyan:  #26baa4;
@@ -10,7 +10,7 @@
 html,body{
     margin: 0;
     font-size: 18px;
-    font-style: "Bai Jamjuree" ,serif;
+    font-style: "Bai Jamjuree" ,sans-serif;
     font-weight: 400;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -43,6 +43,7 @@ html,body{
     margin: auto;
     padding: 2% 0;
 }
+
 /* intro */
 .intro{
     position: relative;
@@ -68,6 +69,7 @@ html,body{
 .w-500px{
     max-width: 500px;
 }
+
 /* buttons */
 .ios-btn{
     display: inline-block;
@@ -196,7 +198,6 @@ html,body{
     color: var(--dark-grayish-blue);
     flex-direction: column;
     align-items: center;
-    
 }
 
 .links{
@@ -206,21 +207,8 @@ html,body{
     position: relative; 
 }
 
-
-.link:hover,
-.link:active{
-    color: var(--light-blue);
-    cursor: pointer;
-}
-
 .social-logo{
     margin: 1rem .5rem;
-}
-
-.social-logo:hover,
-.social-logo:active{
-    cursor: pointer;
-    filter: invert(47%) sepia(48%) saturate(5278%) hue-rotate(219deg) brightness(103%) contrast(102%);
 }
 
 .footer-logo{
@@ -262,6 +250,16 @@ html,body{
 }
 
 @media (max-width: 50rem){
+    .intro-heading,
+    .intro-bac,
+    .main-feature,
+    .main-bac,
+    .point-bac
+    .point-intro,
+    .perk-bac,
+    .perk-intro{
+        margin: 0 .9rem;
+    }
     .features{
         flex-direction: column;
         align-items: center;
@@ -272,6 +270,7 @@ html,body{
         display: flex;
         flex-direction: column;
     }
+
     .point-bac{
         margin: 0;
         max-width: 25rem;
@@ -285,6 +284,7 @@ html,body{
         flex-direction: column;
         align-items: center;
     }
+
     .company{
         margin-bottom: 2rem;
     
@@ -308,6 +308,18 @@ html,body{
     opacity: .75;
     cursor: pointer;
 } 
+
+.link:hover,
+.link:active{
+    color: var(--light-blue);
+    cursor: pointer;
+}
+
+.social-logo:hover,
+.social-logo:active{
+    cursor: pointer;
+    filter: invert(47%) sepia(48%) saturate(5278%) hue-rotate(219deg) brightness(103%) contrast(102%);
+}
 
 /* custom scrollbar*/
 ::-webkit-scrollbar {
