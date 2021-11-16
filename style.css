@@ -10,7 +10,7 @@
 html,body{
     margin: 0;
     font-size: 18px;
-    font-style: "Bai Jamjuree" ,sans-serif;
+    font-family: "Bai Jamjuree" ,sans-serif;
     font-weight: 400;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -38,7 +38,7 @@ html,body{
 }
 
 .feature-image{
-    width: 70%;
+    width: 75%;
     display: block;
     margin: auto;
     padding: 2% 0;
@@ -62,18 +62,17 @@ html,body{
 
 .intro-bac{
     color: var(--grayish-blue);
-    font-size: 350;
 }
 
 /* widths */
 .w-500px{
-    max-width: 500px;
+    max-width: 535px;
 }
 
 /* buttons */
 .ios-btn{
     display: inline-block;
-    padding: .6rem 3.5rem;
+    padding: .5rem 3rem;
     border-radius: 25px;
     background-color: var(--strong-cyan);
     color: white;
@@ -83,7 +82,7 @@ html,body{
 .mac-btn{
     margin: .5rem;
     display: inline-block;
-    padding: .6rem 3.5rem;
+    padding: .5rem 3rem;
     border-radius: 25px;
     background-color: var(--light-blue);
     color: white;
@@ -150,7 +149,7 @@ html,body{
 .flex{
     display: flex;
     gap: 1.5rem;
-    margin: 5% 0 10% 0;
+    margin: 10% 0 13% 0;
 }
 
 .flex-item{
@@ -177,24 +176,19 @@ html,body{
 .perk-bac{
     color: var(--grayish-blue);
     max-width: 23rem;
-    margin: 0 1rem;
 }
 
 /* company logos */
 .companies{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 10%;
-}
-
-.company{
-    max-width: 20rem;
+    margin-bottom: 15%;
 }
 
 /* footer */
 .footer{
     display: flex;
-    background: hsl(0, 0%, 95%);
+    background: hsl(0, 0%, 96%);
     color: var(--dark-grayish-blue);
     flex-direction: column;
     align-items: center;
@@ -277,12 +271,11 @@ html,body{
 
     .company{
         margin-bottom: 2rem;
-    
     }
 
     .point-image{
-        margin: 0 auto;
-        width: 50%
+        margin: .5rem auto;
+        width: 75%;
     }
 
     .intro-heading,
@@ -293,7 +286,7 @@ html,body{
     .point-intro,
     .perk-bac,
     .perk-intro{
-        margin: 0 .7rem;
+        margin: 0 1rem;
     }
 }
 
