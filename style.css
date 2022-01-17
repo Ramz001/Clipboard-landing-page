@@ -69,7 +69,9 @@ html,body{
     max-width: 535px;
 }
 
+/*=========*/
 /* buttons */
+/*=========*/
 .ios-btn{
     display: inline-block;
     padding: .5rem 3rem;
@@ -135,7 +137,9 @@ html,body{
     margin-bottom: 6%;
 }  
 
+/*=======*/
 /* icons */
+/*=======*/
 .preview-icon {
     display: flex;
     justify-content: center;
@@ -145,7 +149,9 @@ html,body{
     max-width: 120px;
 }
 
+/*======*/
 /* flex */
+/*======*/
 .flex{
     display: flex;
     gap: 1.5rem;
@@ -161,7 +167,9 @@ html,body{
     gap: 1rem;
 }
 
+/*=======*/
 /* perks */
+/*=======*/
 .perk-logo{
     width: 3rem;
     margin-bottom: 1rem;
@@ -180,12 +188,16 @@ html,body{
 
 /* company logos */
 .companies{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     margin-bottom: 15%;
+    background-color: red;
 }
 
+/*========*/
 /* footer */
+/*========*/
 .footer{
     display: flex;
     background: hsl(0, 0%, 96%);
@@ -213,7 +225,9 @@ html,body{
     display: block;
 }
 
+/*===============*/
 /* media queries */
+/*===============*/
 @media (min-width: 50rem){
     .buttons{
         flex-direction: row;
@@ -265,7 +279,8 @@ html,body{
     }
 
     .companies{
-        flex-direction: column;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         align-items: center;
     }
 
@@ -290,7 +305,9 @@ html,body{
     }
 }
 
+/*===============*/
 /* hover effects */
+/*===============*/
 .mac-btn:hover,
 .mac-btn:active{
     opacity: .75;
@@ -315,7 +332,9 @@ html,body{
     filter: invert(47%) sepia(48%) saturate(5278%) hue-rotate(219deg) brightness(103%) contrast(102%);
 }
 
+/*=================*/
 /* custom scrollbar*/
+/*=================*/
 ::-webkit-scrollbar {
     width: 20px;
   }
