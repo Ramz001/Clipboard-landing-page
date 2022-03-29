@@ -26,6 +26,7 @@ html,body{
 .bac-img{
     position: absolute;
     width: 100%;
+    object-fit: cover;
 }
 
 .point-image{
@@ -38,10 +39,12 @@ html,body{
 }
 
 .feature-image{
-    width: 75%;
+    width: 70%;
     display: block;
     margin: auto;
-    padding: 2% 0;
+    padding: 1% 0;
+    object-fit: scale-down;
+
 }
 
 /* intro */
@@ -55,7 +58,7 @@ html,body{
 }
 
 .intro-heading{
-    font-size: 2rem;
+    font-size: 2.5rem;
     color:  var(--dark-grayish-blue);
     margin: .5rem 0;
 }
@@ -73,22 +76,21 @@ html,body{
 /* buttons */
 /*=========*/
 .ios-btn{
-    display: inline-block;
-    padding: .5rem 3rem;
-    border-radius: 25px;
     background-color: var(--strong-cyan);
-    color: white;
-    box-shadow: 0 3px 10px 1px var(--grayish-blue);
 }
 
 .mac-btn{
-    margin: .5rem;
-    display: inline-block;
-    padding: .5rem 3rem;
-    border-radius: 25px;
     background-color: var(--light-blue);
+}
+
+.btn{
+    display: inline-block;
+    padding: .6rem 2.8rem;
+    border-radius: 25px;
     color: white;
-    box-shadow: 0 3px 10px 1px var(--grayish-blue);
+    box-shadow:  0 10px 15px -3px var(--grayish-blue);
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .buttons{
@@ -113,7 +115,7 @@ html,body{
     color: var(--dark-grayish-blue);
     font-size: 1.6rem;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: .5rem;
 }
 
 .main-bac{
@@ -155,7 +157,7 @@ html,body{
 .flex{
     display: flex;
     gap: 1.5rem;
-    margin: 10% 0 13% 0;
+    margin: 4% 8% 9% 8%;
 }
 
 .flex-item{
@@ -189,10 +191,13 @@ html,body{
 /* company logos */
 .companies{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5,1fr);
     grid-template-rows: 1fr;
     margin-bottom: 15%;
+    margin-right: 3%;
+    margin-left: 3%;
     justify-items: center;
+
 }
 
 /*========*/
@@ -218,8 +223,10 @@ html,body{
 }
 
 .footer-logo{
-    width: 3rem;
-    height: 3rem;
+    min-width: 2rem;
+    max-width: 4rem;
+    min-height: 2rem;
+    max-height: 4rem;
     margin: .5rem 0;
     position: relative;
     display: block;
@@ -233,7 +240,11 @@ html,body{
         flex-direction: row;
         justify-content: center;
     }
-    
+
+    .ios-btn{
+        margin-right: 1.5rem;        
+    }
+
     .footer{
         flex-direction: row;
         min-height: 9rem;
@@ -258,15 +269,29 @@ html,body{
 }
 
 @media (max-width: 50rem){
+    .intro-heading{
+        font-size: 200%;
+    }
+
     .features{
         flex-direction: column;
         align-items: center;
+    }
+
+    .ios-btn{
+        margin-bottom: 1rem;
     }
 
     .feature-points{
         text-align: center;
         display: flex;
         flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .point-intro{
+        padding-top: 1rem;
+        margin: auto;
     }
 
     .point-bac{
@@ -279,7 +304,7 @@ html,body{
     }
 
     .companies{
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
         grid-template-columns: 1fr;
         align-items: center;
     }
@@ -291,6 +316,8 @@ html,body{
     .point-image{
         margin: .5rem auto;
         width: 75%;
+        object-fit: contain;
+
     }
 
     .intro-heading,
@@ -301,9 +328,9 @@ html,body{
     .point-intro,
     .perk-bac,
     .perk-intro{
-        margin: 0 1rem;
+        margin: 0 1.7rem;
     }
-}
+}             
 
 /*===============*/
 /* hover effects */
